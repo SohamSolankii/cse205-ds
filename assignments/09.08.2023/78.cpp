@@ -1,28 +1,23 @@
 class Solution {
-public:
-    //vector<vector<int>> ans;
-    void sub(vector<int>& nums, int i,int j, vector<int> tem){
-        if(nums[i]=='\0'){
-            tem[j] ='\0';
 
-            if(tem[0]=='\0'){
-                //ans.push_back();
-            }
-           // ans.push_back(tem);
+public:
+    void solve(vector<int> nums, vector<int> tmp, int index , vector<vector<int>>& ans){
+        if(index >= nums.size()){
+            ans.push_back(tmp);
+            return;
         }
 
-        // including
-        tem[j] = nums[i];
-        sub(nums,i+1,j+1,tem);
-
-        // excluding
-        sub(nums,i+1,j,tem);
-        
+        solve(nums, tmp, index+1,ans);
+        tmp.push_back(nums[index]);
+        solve(nums,tmp,index+1,ans);
+        tmp.pop_back();
     }
-
     vector<vector<int>> subsets(vector<int>& nums) {
-        vector<int> tem;
-        sub(nums,0,0,tem);
-        //return ans;   
+        vector<vector<int>> ans;
+        vector<int> tmp;
+        
+        solve(nums, tmp, 0, ans);
+        return ans;
+
     }
 };
