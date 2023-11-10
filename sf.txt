@@ -1,6 +1,0 @@
-slow and fast pointer : 
-    cycle in linked ll
-    mid of linked list
-    remove nth node in the end of linkedlist
-
-convert in array/string , dummy node, using unordered_set
