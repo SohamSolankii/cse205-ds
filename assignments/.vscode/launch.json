@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/dsa/cse205-ds/assignments/11.10.2023",
-      "program": "d:/dsa/cse205-ds/assignments/11.10.2023/build/Debug/outDebug",
+      "cwd": "d:/dsa/cse205-ds/assignments/08.11.2023",
+      "program": "d:/dsa/cse205-ds/assignments/08.11.2023/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
